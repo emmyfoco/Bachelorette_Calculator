@@ -1,0 +1,83 @@
+/* ==================================
+Type Selectors
+=====================================*/
+
+body {
+    text-align: left;
+    
+}
+
+header { 
+    background-color: #2BBC9B;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+h3 {
+    
+}
+
+div {
+    margin: 0px;
+}
+
+p {
+    font-size: 14px;
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+footer {
+    background-color: #2BBC9B;
+}
+
+/* ==================================
+Class Selectors
+=====================================*/
+
+
+
+
+
+/* ==================================
+ID Selectors
+=====================================*/
+
+#main-header {
+    
+}
+
+#basicInfo {
+    background-color: #f98c84;
+}
+
+#calculator {
+    background-color: #A18EB3;
+}
+
+#food {
+    background-color: #A1D528;
+}
+
+#morning {
+    background-color:#e9ba3e;
+}
+
+#main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
