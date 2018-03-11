@@ -2,7 +2,7 @@
 
 ## Description
 ```
-I created this page as a gift for my best friend, who is getting married.  I am organizing her bachelorette party from 1,000 miles away, and wanted it to be easy for all her friends, scattered across the country, to find info about the party.  The most useful part is the party cost calculator that will tell them how much they can expect to spend on the whole weekend.
+I created this page to help me organize my best friend's bachelorette party from 1,000 miles away; her friends are scattered across the country and they needed an easy place to find info and plan their trip. The most useful part is the party cost calculator that will let them answer some questions and find out how much they can expect to spend on the whole weekend, so they can budget.
 
 ```
 ## Custom CSS Classes

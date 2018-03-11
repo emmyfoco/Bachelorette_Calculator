@@ -1,14 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+
 /* ==================================
 Type Selectors
 =====================================*/
 
 body {
     text-align: left;
-    
 }
 
-header { 
-    background-color: #2BBC9B;
+span{
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding:5px; 
+}
+
+a:hover {
+    color: white;
+    background: purple;
+}
+
+a:active {
+    color: black;
 }
 
 h1 {
@@ -26,7 +44,7 @@ h3 {
 }
 
 div {
-    margin: 0px;
+    /*margin: 0px;*/
 }
 
 p {
@@ -48,8 +66,23 @@ footer {
 /* ==================================
 Class Selectors
 =====================================*/
+.section {
+   margin: none;
+   
+}
 
-
+.main-header { 
+    margin: -10px;
+    padding: 5%;
+   /* background-color: #2BBC9B; 
+    background-image: url('../images/Catherine glamor shot.jpg');
+    background-size: 80% 50%;
+    background-repeat: no-repeat;
+    background-position: center;*/
+    
+    background: #2BBC9B url('../images/Catherine glamor shot.jpg') no-repeat center / cover;
+    
+}
 
 
 
@@ -57,8 +90,21 @@ Class Selectors
 ID Selectors
 =====================================*/
 
+
+#headline {
+    text-align: left;
+}
+#top {
+    background-color: #2BBC9B;
+}
+
 #main-header {
     
+}
+
+#intro {
+    width: 35%;
+    color: white;
 }
 
 #basicInfo {
@@ -78,6 +124,34 @@ ID Selectors
 }
 
 #main-footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
+    margin: -10px;
 }
+
+#backToTop {
+    float: right;
+}
+
+
+/* ==================================
+Flexbox styles
+=====================================*/
+
+
+
+/* ==================================
+Float clearfix
+=====================================*/
+
+
+/* ==================================
+Media queries
+=====================================*/
+@media (min-width: 769px) {
+
+}
+
+@media (min-width: 1025px) {
+
+}
+/* Need to make sections and photos side by side in wider layouts., but stacked in narrower ones.  */

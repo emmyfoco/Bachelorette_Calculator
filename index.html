@@ -7,16 +7,21 @@
 	<link rel="stylesheet" href="css/flexbox.css">
 </head>
 <body>
+<!-- Main nav begins here -->
     <header id="top">
-        <ul id="main header">
-            <li>Event Details</li>
-            <li>Cost Calculator</li>
-            <li>Food</li>
-            <li>The Morning After</li>
+        <h1 class="name">Catherine's Bachelorette</h1>
+        <ul id="main-header">
+            <li><a href="#basicInfo">Event Details</a></li>
+            <li></li><a href="#calculator">Cost Calculator</a></li>
+            <li></li><a href="#food">Food</a></li>
+            <li></li><a href="#morning">The Morning After</a></li>
         </ul>
+    </header>
 
-       <h1>Get. Ready.</h1>
-       <div id="intro">
+<!-- Hero banner begins here -->
+    <header class="main-header">
+       <h1 id="headline">Get. Ready.</h1>
+       <div id="intro"> 
             <p>
             Ladies, near and far—the time has come.  
             Catherine is getting married and it’s our duty to turn the hell up. 
@@ -28,7 +33,11 @@
         </div>
     </header>
 
-    <div id="basicInfo"> 
+<!-- Contains all basic info -->
+    <img id="whitedress" src="images/Catherine white dress.jpg" alt="Girl smiling in a white dress">
+    
+    <div id="basicInfo" class="section"> 
+        
         <h1>EVENT DETAILS</h1>   
         <h2>When?</h2> 
             <p> Memorial Day weekend.  Friday May 25th - Monday May 28th</p>
@@ -39,9 +48,11 @@
             <p>Friday, 4 PM</p>
         <h2>Check-out:</h2> 
             <p> Monday, 11 AM</p>
+
     </div>
 
-    <div id="calculator">
+<!-- Contains calculator form -->
+    <div id="calculator" class="section">
         <h1>COST CALCULATOR</h2>
             <p>How much will this cost? No amount could be too much.  But here’s a tool to help you.</p>
             <!-- Insert javascript here. This is where the calculator lives. 
@@ -56,7 +67,10 @@
             -->
     </div>
 
-    <div id="food">
+<!-- Contains food menu  -->
+    <img id="chicken" src="images/Catherine with Chicken.jpg" alt="Girl smiling with chicken">
+    
+    <div id="food" class="section">
             <h1>FOOD</h1>
             <h2>Friday:</h2>
                 <h3>Dinner:</h3> 
@@ -78,7 +92,10 @@
                     <p>Veggie frittata tacos. Tomatillo. Fresh avocado salsa.  Optional Bloody Mary’s.</p>
     </div>
 
-    <div id="morning">
+<!-- Contains info about last morning -->
+    <img id="toilet" src="images/Catherine toilet.jpg" alt="Child reading paper on toilet">
+
+    <div id="morning" class="section">
         <H1>THE MORNING AFTER</H1>
         <p> While Catherine is in the bathroom for 4 hours, we have to pack, 
             clean and be out of there by 11 AM.  I’ll get up and make breakfast 
@@ -89,12 +106,14 @@
             </p>
     </div>
 
+<!-- Beginning of footer -->
     <footer id="main-footer">
         <ul>
             <li>502-494-7903</li>
             <li>emily.foerster@gmail.com</li>
+            <a id="backToTop" href="#top">Back to top</a>
         </ul>
-        <a href="#top">Back to top</a>
+        
     </footer>
 
 </body>
