@@ -1,5 +1,5 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* ==================================
@@ -10,23 +10,20 @@ body {
     text-align: left;
 }
 
-span{
-
-}
-
 a {
-    color: white;
     text-decoration: none;
     padding:5px; 
+    color: black;
+  
 }
 
-a:hover {
-    color: white;
-    background: purple;
+li:hover {
+    background-color: lightgrey;
+   
 }
 
 a:active {
-    color: black;
+    color: white;
 }
 
 h1 {
@@ -47,16 +44,20 @@ div {
     /*margin: 0px;*/
 }
 
+img {
+    width: 100%;
+}
+
 p {
     font-size: 14px;
 }
 
 ul {
-
+ list-style: none;
 }
 
 li {
-
+    margin: 0;
 }
 
 footer {
@@ -71,17 +72,19 @@ Class Selectors
    
 }
 
-.main-header { 
+.hero { 
     margin: -10px;
     padding: 5%;
-   /* background-color: #2BBC9B; 
-    background-image: url('../images/Catherine glamor shot.jpg');
-    background-size: 80% 50%;
-    background-repeat: no-repeat;
-    background-position: center;*/
-    
     background: #2BBC9B url('../images/Catherine glamor shot.jpg') no-repeat center / cover;
-    
+}
+.main-nav {
+    display: flex;    
+    flex-direction: row;
+}
+
+.main-nav li {
+        padding: 10px 15px;
+
 }
 
 
@@ -95,32 +98,34 @@ ID Selectors
     text-align: left;
 }
 #top {
-    background-color: #2BBC9B;
-}
-
-#main-header {
-    
+    background-color: white;
+    margin: -10px;
+    padding: 0;
+    border: 0;
 }
 
 #intro {
-    width: 35%;
+    width: 125px;
     color: white;
 }
 
-#basicInfo {
+#deets {
     background-color: #f98c84;
+  
 }
 
-#calculator {
+#cost {
     background-color: #A18EB3;
 }
 
 #food {
     background-color: #A1D528;
+  
 }
 
-#morning {
+#check-out {
     background-color:#e9ba3e;
+  
 }
 
 #main-footer {
@@ -129,6 +134,7 @@ ID Selectors
 }
 
 #backToTop {
+    color: white;
     float: right;
 }
 
@@ -139,8 +145,9 @@ Flexbox styles
 
 
 
+
 /* ==================================
-Float clearfix
+Float clearfix?
 =====================================*/
 
 
@@ -149,9 +156,23 @@ Media queries
 =====================================*/
 @media (min-width: 769px) {
 
+#top,
+.main-nav {
+    display: flex;
+}
+
+#top {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 }
 
 @media (min-width: 1025px) {
 
+    #top {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 }
 /* Need to make sections and photos side by side in wider layouts., but stacked in narrower ones.  */
