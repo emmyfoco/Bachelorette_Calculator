@@ -7,135 +7,148 @@
 	<link rel="stylesheet" href="css/flexbox.css">
 </head>
 <body>
+
 <!-- Main nav begins here -->
-    <header id="top">
-        <ul class="main-nav">
-            <li><a href="#deets">Deets</a></li>
-            <li><a href="#cost">Cost</a></li>
-            <li><a href="#food">Food</a></li>
-            <li><a href="#check-out">Check-out</a></li>
-        </ul>
-    </header>
+    <section id="top">      
+        <header>
+            <ul class="main-nav">
+                <li><a href="#deets">Deets</a></li>
+                <li><a href="#cost">Cost</a></li>
+                <li><a href="#food">Food</a></li>
+                <li><a href="#check-out">Check-out</a></li>
+            </ul>
+        </header>
+    </section>
 
 <!-- Hero banner begins here -->
-    <header class="hero">
-       <h1 id="headline">Get. Ready.</h1>
-       <div id="intro"> 
-            <p>
-            Ladies, near and far. The time has come.  
-            Catherine is getting married and it’s our duty to turn the hell up. 
-            We have a mansion all to ourselves and if a major appliance 
-            isn’t broken by Monday morning, we did it wrong.
-            <br><br>Where is it, you ask? What dates? How much will it cost?  
-            Everything you need to know is here. 
-            </p> 
-        </div>
-    </header>
+    <section id="hero">  
+        <header>
+            <h1 id="headline">Get. Ready.</h1>
+            <div id="intro"> 
+                <p>
+                Ladies, near and far! The time has come.  
+                Catherine is getting married and it&apos;s our duty to turn the hell up. 
+                We have a mansion all to ourselves and if a major appliance 
+                isn’t broken by Monday morning, we did it wrong.
+                <br><br>Where is it, you ask? What dates? How much will it cost?  
+                Everything you need to know is here. 
+                </p> 
+            </div>
+        </header>
+    </section>
 
 <!-- Contains all basic info -->
-    <div id="deets" class="section row"> 
-        <div class="section-content">
-            <h1>EVENT DETAILS</h1>   
-            <h2>When?</h2> 
+    <section id="deets" class="container">
+        <div class="row"> 
+            <div class="section-content">
+                <h1>EVENT DETAILS</h1>   
+                <h2>When?</h2> 
                 <p> Memorial Day weekend. Friday May 25th - Monday May 28th</p>
-            <h2>Location:</h2> 
+                <h2>Location:</h2> 
                 <p> 123 Infinity Pool drive,  Spicewood, TX</p>
-            <h2>Check-in:</h2> 
+                <h2>Check-in:</h2> 
                 <p>Friday, 4 PM</p>
-            <h2>Check-out:</h2> 
+                <h2>Check-out:</h2> 
                 <p> Monday, 11 AM</p>
+            </div>
+            <img id="whitedress" src="images/Catherine white dress.jpg" alt="Girl smiling in a white dress">
         </div>
-        <img id="whitedress" src="images/Catherine white dress.jpg" alt="Girl smiling in a white dress">
-    </div>
+    </section>
 
 <!-- Contains calculator form -->
-    <div id="cost" class="section">
-        <h1>COST CALCULATOR</h2>
-            <p>How much will this cost? No amount could be too much.  But here’s a tool to help you.</p>
-        <form>
-            How many nights will you stay in the mansion?  Please enter a number 0-3
-            <input type="text" name="firstname"><br>
+    <section id="cost" class="container">
+        <div>
+            <h1>COST CALCULATOR</h1>
+                <p>How much will this cost? No amount could be too much.  But here&apos;s a tool to help you.</p>
+            <form>
+                How many nights will you stay in the mansion?  Please enter a number 0-3
+                <input type="text" name="firstname"><br>
 
-            How many dinners will you be with us (if all weekend, enter 3)
-            <input type="number" name="dinner"><br>
+                How many dinners will you be with us (if all weekend, enter 3)
+                <input type="number" name="dinner"><br>
 
-            How many brunches will you be with us (if all weekend, enter 3)
-            <input type="number" name="brunch"><br>
+                How many brunches will you be with us (if all weekend, enter 3)
+                <input type="number" name="brunch"><br>
 
-            Are you going to the water park?
-            <input type="radio" name="waterpark"><br>
+                Are you going to the water park?
+                <input type="radio" name="waterpark"><br>
 
-            +Booze allowance: $40 <br>
-            
-            How much will you spend on a gift? $
-            <input type="number" name="gift"><br>
-            
-            <br>How will you travel? <!--multiple choice, each answer affiliated with a dollar value-->
-            <input type="radio" name="travel"><br>
-        </form>    
-            
-            <!-- Insert javascript here. This is where the calculator lives. 
-            What items need to be included?  
-            # of nights in Airbnb (0-3)
-            Can do the following as check boxes with cost affiliated with each checked box
-            # of brunches (0-3)
-            # of dinners (0-3)
-            Joining water park?
-            Enter miscellaneous budget you want to plan for (booze, gift for Catherine)
-            Travel: Flying?  Driving?
-            -->
-    </div>
+                +Booze allowance: $40 <br>
+                
+                How much will you spend on a gift? $
+                <input type="number" name="gift"><br>
+                
+                <br>How will you travel? <!--multiple choice, each answer affiliated with a dollar value-->
+                <input type="radio" name="travel"><br>
+            </form>    
+                
+                <!-- Insert javascript here. This is where the calculator lives. 
+                What items need to be included?  
+                # of nights in Airbnb (0-3)
+                Can do the following as check boxes with cost affiliated with each checked box
+                # of brunches (0-3)
+                # of dinners (0-3)
+                Joining water park?
+                Enter miscellaneous budget you want to plan for (booze, gift for Catherine)
+                Travel: Flying?  Driving?
+                -->
+        </div>
+    </section>
 
 <!-- Contains food menu  -->
-    <div id="food" class="section row">
-        <div class="section-content">
-            <h1>FOOD</h1>
+    <section id="food" class="container">   
+        <div class="row"> 
+            <div class="section-content">
+                <h1>FOOD</h1>
                 <h2>Friday:</h2>
-                    <h3>Dinner:</h3>
-                        <p>Tacos three ways—steak, shrimp, and grilled garlic sweet potato. Elotes. Boozy horchata milk shakes.</p>
+                <h3>Dinner:</h3>
+                <p>Tacos three ways. Steak, shrimp, and grilled garlic sweet potato. Elotes. Boozy horchata milk shakes.</p>
                 <h2>Saturday:</h2>
-                    <h3>Brunch:</h3>
-                        <p>Egg and sausage casserole.  Fresh fruit. Mimosas.</p>
-                    <h3>Dinner:</h3> 
-                        <p>Adobo chicken. Grilled pineapple.  Bruised kale salad with avocado. Palomas.</p>
+                <h3>Brunch:</h3>
+                <p>Egg and sausage casserole.  Fresh fruit. Mimosas.</p>
+                <h3>Dinner:</h3> 
+                <p>Adobo chicken. Grilled pineapple.  Bruised kale salad with avocado. Palomas.</p>
                 <h2>Sunday:</h2>
-                    <h3>Brunch:</h3>
-                        <p>Avocado toast with Chile oil and sesame seeds. Scrambled egg. Hash browns.</p> 
-                
-                    <h3>Dinner:</h3>  
-                        <p>Bratwursts and veggie dogs, roasted potatoes, lemon-cilantro carrots, 
-                            roasted brussel sprouts.  Bourbon and soda with lemon.</p>
+                <h3>Brunch:</h3>
+                <p>Avocado toast with Chile oil and sesame seeds. Scrambled egg. Hash browns.</p> 
+                <h3>Dinner:</h3>  
+                <p>Bratwursts and veggie dogs, roasted potatoes, lemon-cilantro carrots, 
+                    roasted brussel sprouts.  Bourbon and soda with lemon.</p>
                 <h2>Monday:</h2> 
-                    <h3>Breakfast:</h3>
-                        <p>Veggie frittata tacos. Tomatillo. Fresh avocado salsa.  Optional Bloody Mary’s.</p>
+                <h3>Breakfast:</h3>
+                <p>Veggie frittata tacos. Tomatillo. Fresh avocado salsa.  Optional Bloody Marys.</p>
+            </div>
+            <img id="chicken" src="images/Catherine with Chicken.jpg" alt="Girl smiling with chicken">    
         </div>
-        <img id="chicken" src="images/Catherine with Chicken.jpg" alt="Girl smiling with chicken">    
-    </div>
+    </section>
 
 <!-- Contains info about last morning -->
-    <div id="check-out" class="section row">
-        <div class="section-content">
-            <H1>THE MORNING AFTER</H1>
-            <p> While Catherine is in the bathroom for 4 hours, we have to pack, 
-                clean and be out of there by 11 AM.  I’ll get up and make breakfast 
-                while you all pack and clean. We will caravan back to Austin.  
-                If you’re flying out, try to get a flight at 3 PM or later, 
-                so you have time to get to the airport. I’ll miss you 
-                until I see you again at the wedding.
-                </p>
+    <section id="check-out" class="container">
+        <div class="row">
+            <div class="section-content">
+                <H1>THE MORNING AFTER</H1>
+                <p> While Catherine is in the bathroom for 4 hours, we have to pack, 
+                    clean and be out of there by 11 AM.  I&apos;ll get up and make breakfast 
+                    while you all pack and clean. We will caravan back to Austin.  
+                    If you&apos;re flying out, try to get a flight at 3 PM or later, 
+                    so you have time to get to the airport. I&apos;ll miss you 
+                    until I see you again at the wedding.
+                    </p>
+            </div>
+            <img id="toilet" src="images/Catherine toilet.jpg" alt="Child reading paper on toilet"> 
         </div>
-        <img id="toilet" src="images/Catherine toilet.jpg" alt="Child reading paper on toilet"> 
-    </div>
+    </section>
 
 <!-- Beginning of footer -->
-    <footer id="main-footer">
-        <ul>
-            <li>502-494-7903</li>
-            <li>emily.foerster@gmail.com</li>
-            <a id="backToTop" href="#top">Back to top</a>
-        </ul>
-        
-    </footer>
+    <section id="main-footer">    
+        <footer>
+            <ul>
+                <li>502-494-7903</li>
+                <li>emily.foerster@gmail.com</li>
+                <a id="backToTop" href="#top">Back to top</a>
+            </ul>
+        </footer>
+    </section>
 
 </body>
 
