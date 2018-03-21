@@ -1,7 +1,3 @@
-/* * {
-    box-sizing: border-box;
-} */
-
 /* ==================================
 Type Selectors
 =====================================*/
@@ -13,10 +9,8 @@ body {
 a {
     text-decoration: none;
     padding:5px; 
-    color: black;
-  
+    color: black; 
 }
-
 
 a:active {
     color: white;
@@ -26,6 +20,7 @@ h1 {
     text-align: center;
     font-size: 30px;
     color: white;
+    margin: 0;
 }
 
 h2 {
@@ -41,7 +36,8 @@ the <p> elements that follow the <h3> elements in the #deets div appear side by 
 
 
 img {
-    width: 100%;    
+    width: 100%;   
+    
 }
 
 p {
@@ -123,15 +119,11 @@ ID Selectors
 #food {
     background-color: #A1D528;
     margin: 10px 0;
-  
 }
-
-
 
 #check-out {
     background-color:#e9ba3e;
     margin-bottom: 20px;
-  
 }
 
 #top,
@@ -168,21 +160,6 @@ Media queries
         height: 50%;
         border-left: 10px solid white;
     }
-/* Don't know if the below is helping or hurting.  
-I want the .section-content and .section-img items to display side-by-side. 
-They are not displaying as true columns. */
-
-    /* img {
-        height: 50%;
-        width: 50%;
-        justify-content: right;
-    }
-
-    #toilet {
-        height: 25%;
-        width: 25%;
-    } */
-
 }
 
 @media (min-width: 1025px) {
