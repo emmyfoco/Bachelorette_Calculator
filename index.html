@@ -6,11 +6,12 @@
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/flexbox.css">
     <!-- below adds bootstrap 4-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
-<!-- Main nav begins here -->
+</head>
+
+<body>
+<!-- main nav -->
     <section id="top">      
         <header>
             <ul class="main-nav">
@@ -21,8 +22,9 @@
             </ul>
         </header>
     </section>
+<!-- /main nav -->
 
-<!-- Hero banner begins here -->
+<!-- Hero banner -->
     <section id="hero">  
         <header>
             <h1 id="headline">Get. Ready.</h1>
@@ -38,8 +40,9 @@
             </div>
         </header>
     </section>
+<!-- /hero banner-->
 
-<!-- Contains all basic info -->
+<!-- basic info -->
     <section id="deets" class="container">
         <div class="row"> 
             <div class="section-content">
@@ -56,12 +59,65 @@
             <img id="whitedress" src="images/Catherine white dress.jpg" alt="Girl smiling in a white dress">
         </div>
     </section>
+<!-- /basic info -->
 
-<!-- Contains calculator form -->
+<!-- calculator form -->
     <section id="cost" class="container">
-        <div>
+            <div>
+                <h1>COST CALCULATOR</h1>
+                <p>How much will this cost? No amount could be too much.  But here&apos;s a tool to help you.</p>
+                
+                <form>
+                    <fieldset>
+                    <span>
+                        <label>How many nights will you stay in the mansion?</label> 
+                        <select>
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                        </select><br>
+                    </span>
+                    <span>
+                        <label>How many dinners will you be with us?</label>
+                        <select>
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                        </select><br>
+                    </span>
+
+                    <span>
+                        <label>How many brunches will you be with us?</label>
+                        <select>
+                            <option value="one">1</option>
+                            <option value="two">2</option>
+                            <option value="three">3</option>
+                        </select><br>
+                    </span>
+                    <span>
+                        <label>Are you going to the water park?</label>
+                            <input type="radio" id="yes" value="yes" name="waterpark"><label for="yes">Yes</label>
+                            <input type="radio" id="no" value="no" name="waterpark"><label for="no">No</label>
+                    </span>
+                    <p>+Booze allowance: $40</p><br>
+                    <button id="calculate">Calculate cost</button>
+                </fieldset>
+
+                <label id="finalCost">Your final estimated cost is
+                    <!-- this span is where the toal calculated number will populate -->
+                    <span id="total"></span>
+                </label>
+
+                </form> 
+            </div>
+        </section>
+        <!--/calculator form-->
+
+<!-- discarded calculator content -->
+        <!-- <div>
             <h1>COST CALCULATOR</h1>
                 <p>How much will this cost? No amount could be too much.  But here&apos;s a tool to help you.</p>
+            
             <form>
                 How many nights will you stay in the mansion?  Please enter a number 0-3
                 <input type="text" name="firstname"><br>
@@ -81,8 +137,8 @@
                 <input type="number" name="gift"><br>
                 
                 <br>How will you travel? <!--multiple choice, each answer affiliated with a dollar value-->
-                <input type="radio" name="travel"><br>
-            </form>    
+                <!-- <input type="radio" name="travel"><br> -->
+            <!-- </form>     -->
                 
                 <!-- Insert javascript here. This is where the calculator lives. 
                 What items need to be included?  
@@ -94,8 +150,9 @@
                 Enter miscellaneous budget you want to plan for (booze, gift for Catherine)
                 Travel: Flying?  Driving?
                 -->
-        </div>
-    </section>
+        <!-- </div> -->
+    <!-- </section>  -->
+
 
 <!-- Contains food menu  -->
     <section id="food" class="container">   
@@ -123,8 +180,9 @@
             <img id="chicken" src="images/Catherine with Chicken.jpg" alt="Girl smiling with chicken">    
         </div>
     </section>
+<!-- /food menu -->
 
-<!-- Contains info about last morning -->
+<!--final morning info -->
     <section id="check-out" class="container">
         <div class="row">
             <div class="section-content">
@@ -140,8 +198,9 @@
             <img id="toilet" src="images/Catherine toilet.jpg" alt="Child reading paper on toilet"> 
         </div>
     </section>
+<!-- /final morning info -->
 
-<!-- Beginning of footer -->
+<!-- footer -->
     <section id="main-footer">    
         <footer>
             <ul>
@@ -151,6 +210,12 @@
             </ul>
         </footer>
     </section>
+<!-- /footer-->
+
+<!-- jQuery script tag below -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- custom JS file tag below -->
+<script src="js/app.js"></script>
 
 </body>
 

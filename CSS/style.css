@@ -1,4 +1,12 @@
 /* ==================================
+Web fonts
+=====================================*/
+/* @font-face {
+    font-family: ;
+} */
+
+
+/* ==================================
 Type Selectors
 =====================================*/
 
@@ -57,6 +65,14 @@ footer {
     padding:  10px;
     margin: -10px;
 }
+
+fieldset {
+    border: none;
+    display: flex;
+    background-color: white;
+}
+
+
 
 /* ==================================
 Class Selectors
