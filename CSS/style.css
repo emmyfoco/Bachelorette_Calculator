@@ -112,11 +112,19 @@ ID Selectors
 #headline {
     text-align: left;
 }
+
+#top,
+.main-nav {
+    display: flex;
+}
+
 #top {
     background-color: white;
     margin: -10px;
     padding: 0;
     border: 0;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 #intro {
@@ -144,27 +152,10 @@ ID Selectors
     margin-bottom: 20px;
 }
 
-#top,
-.main-nav {
-    display: flex;
-}
-
-/* Using the ID here because I have two headers and I don't want the style to apply to both. */
-#top {
-    flex-direction: column;
-    align-items: flex-end;
-}
-
 #backToTop {
     color: white;
     float: right;
 }
-
-#total {
-    background-color: white; 
-    border: solid 2px black;
-}
-
 
 /* ==================================
 Media queries

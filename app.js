@@ -22,6 +22,6 @@ function calculatePrice(costCalculator){
     //calculate total value  
     var total = nights+dinners+brunches+booze; 
       
-    //print value to  PicExtPrice 
+    //print value to finalTotal 
     document.getElementById("finalTotal").value=total;
   }
