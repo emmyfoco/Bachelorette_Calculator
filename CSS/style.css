@@ -73,7 +73,10 @@ fieldset {
 
 form {
     padding-bottom: 25px;
+    background: white;
+    border-radius: 5px;
 }
+
 
 
 /* ==================================
@@ -140,6 +143,7 @@ ID Selectors
 #cost {
     background-color: #A18EB3;
     margin: 10px 0;
+    background: url('../images/pink cactus.jpg') no-repeat center / cover;
 }
 
 #food {

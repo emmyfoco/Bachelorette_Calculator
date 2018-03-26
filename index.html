@@ -59,68 +59,66 @@
 
 <!-- calculator form -->
     <section id="cost" class="container">
-        <div>
-            <h1>COST CALCULATOR</h1>
-            <p>How much will this cost? No amount could be too much.  But here&apos;s a tool to help you.</p>
-            
-            <form name=costCalculator>
-                <fieldset>
-                    <span>
-                        <label>How many nights will you stay in the mansion?</label> 
-                        <select name="nightsMansion" onChange="calculatePrice()" id="nightsMansion">
-                            <option value="0">Select one</option>
-                            <option value="0">I won't be spending the night</option>
-                            <option value="50">1 ($50)</option>
-                            <option value="100">2 ($100)</option>
-                            <option value="150">3 ($150)</option>
-                        </select><br>
-                    </span>
-                    <span>
-                        <label>How many nights will you eat dinner with us?</label>
-                        <select name="dinners" onChange="calculatePrice()" id="dinners">
-                            <option value="0">Select one</option>
-                            <option value="0">I won't be there for dinner at all</option>
-                            <option value="10">1 ($10)</option>
-                            <option value="20">2 ($20)</option>
-                            <option value="30">3 ($30)</option>
-                        </select><br>
-                    </span>
+        <h1>COST CALCULATOR</h1>
+        <p>How much will this cost? No amount could be too much.  But here&apos;s a tool to help you.</p>
+        
+        <form name=costCalculator id=calculatorQs>
+            <!-- <fieldset> -->
+                <span>
+                    <label>How many nights will you stay in the mansion?</label> 
+                    <select name="nightsMansion" onChange="calculatePrice()" id="nightsMansion">
+                        <option value="0">Select one</option>
+                        <option value="0">I won't be spending the night</option>
+                        <option value="50">1 ($50)</option>
+                        <option value="100">2 ($100)</option>
+                        <option value="150">3 ($150)</option>
+                    </select><br>
+                </span>
+                <span>
+                    <label>How many nights will you eat dinner with us?</label>
+                    <select name="dinners" onChange="calculatePrice()" id="dinners">
+                        <option value="0">Select one</option>
+                        <option value="0">I won't be there for dinner at all</option>
+                        <option value="10">1 ($10)</option>
+                        <option value="20">2 ($20)</option>
+                        <option value="30">3 ($30)</option>
+                    </select><br>
+                </span>
 
+                <span>
+                    <label>How many days will you eat brunch with us?</label>
+                    <select name="brunches" onChange="calculatePrice()" id="brunches">
+                        <option value="0">Select one</option>
+                        <option value="0">I won't be there for brunch at all</option>
+                        <option value="15">1 ($15)</option>
+                        <option value="30">2 ($30)</option>
+                        <option value="45">3 ($45)</option>
+                    </select><br>
+                </span>
+
+                <span>
+                    <label>Will you contribute $30 to the booze fund?</label>
+                    <select name="booze" onChange="calculatePrice()" id="booze">
+                        <option value="0">Select one</option>
+                        <option value="0">No, you lushes are on your own</option>
+                        <option value="30">Of course!</option>
+                    </select><br>
+                </span>
+
+                <!-- Experiment with this later 
                     <span>
-                        <label>How many days will you eat brunch with us?</label>
-                        <select name="brunches" onChange="calculatePrice()" id="brunches">
-                            <option value="0">Select one</option>
-                            <option value="0">I won't be there for brunch at all</option>
-                            <option value="15">1 ($15)</option>
-                            <option value="30">2 ($30)</option>
-                            <option value="45">3 ($45)</option>
-                        </select><br>
-                    </span>
-
-                    <span>
-                        <label>Will you contribute $30 to the booze fund?</label>
-                        <select name="booze" onChange="calculatePrice()" id="booze">
-                            <option value="0">Select one</option>
-                            <option value="0">No, you lushes are on your own</option>
-                            <option value="30">Of course!</option>
-                        </select><br>
-                    </span>
-
-                    <!-- Experiment with this later 
-                        <span>
-                        <label>Are you going to the water park?</label>
-                            <input type="radio" id="yes" value="30" name="waterpark"><label for="yes">Yes</label>
-                            <input type="radio" id="no" value="0" name="waterpark"><label for="no">No</label>
-                    </span> -->
-                   
-                    <!-- Experiment with button later
-                    <button id="calculate">Calculate cost</button> -->
-
-                </fieldset>
-               <p>Total anticipated cost:<INPUT type="text" id="finalTotal" Size=8>
+                    <label>Are you going to the water park?</label>
+                        <input type="radio" id="yes" value="30" name="waterpark"><label for="yes">Yes</label>
+                        <input type="radio" id="no" value="0" name="waterpark"><label for="no">No</label>
+                </span> -->
                 
-            </form> 
-        </div>
+                <!-- Experiment with button later
+                <button id="calculate">Calculate cost</button> -->
+
+            <!-- </fieldset> -->
+            <p>Total anticipated cost:<INPUT type="text" id="finalTotal" Size=8>
+            
+        </form> 
     </section>
 <!--/calculator form-->
 
