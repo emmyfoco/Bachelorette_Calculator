@@ -45,7 +45,7 @@ the <p> elements that follow the <h3> elements in the #deets div appear side by 
 
 img {
     width: 100%;   
-    
+    vertical-align: bottom;
 }
 
 p {
@@ -69,9 +69,11 @@ footer {
 fieldset {
     border: none;
     display: flex;
-    background-color: white;
 }
 
+form {
+    padding-bottom: 25px;
+}
 
 
 /* ==================================
@@ -157,6 +159,12 @@ ID Selectors
     color: white;
     float: right;
 }
+
+#total {
+    background-color: white; 
+    border: solid 2px black;
+}
+
 
 /* ==================================
 Media queries

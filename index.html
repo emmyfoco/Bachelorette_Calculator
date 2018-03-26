@@ -63,96 +63,72 @@
 
 <!-- calculator form -->
     <section id="cost" class="container">
-            <div>
-                <h1>COST CALCULATOR</h1>
-                <p>How much will this cost? No amount could be too much.  But here&apos;s a tool to help you.</p>
-                
-                <form>
-                    <fieldset>
+        <div>
+            <h1>COST CALCULATOR</h1>
+            <p>How much will this cost? No amount could be too much.  But here&apos;s a tool to help you.</p>
+            
+            <form name=myForm>
+                <fieldset>
                     <span>
                         <label>How many nights will you stay in the mansion?</label> 
-                        <select>
-                            <option value="one">1</option>
-                            <option value="two">2</option>
-                            <option value="three">3</option>
+                        <select name="nightsMansion" onChange="calculatePrice()" id="nightsMansion">
+                            <option value="0">Select one</option>
+                            <option value="0">I won't be spending the night</option>
+                            <option value="50">1 ($50)</option>
+                            <option value="100">2 ($100)</option>
+                            <option value="150">3 ($150)</option>
                         </select><br>
                     </span>
                     <span>
-                        <label>How many dinners will you be with us?</label>
-                        <select>
-                            <option value="one">1</option>
-                            <option value="two">2</option>
-                            <option value="three">3</option>
+                        <label>How many nights will you eat dinner with us?</label>
+                        <select name="dinners" onChange="calculatePrice()" id="dinners">
+                            <option value="0">Select one</option>
+                            <option value="0">I won't be there for dinner at all</option>
+                            <option value="10">1 ($10)</option>
+                            <option value="20">2 ($20)</option>
+                            <option value="30">3 ($30)</option>
                         </select><br>
                     </span>
 
                     <span>
-                        <label>How many brunches will you be with us?</label>
-                        <select>
-                            <option value="one">1</option>
-                            <option value="two">2</option>
-                            <option value="three">3</option>
+                        <label>How many days will you eat brunch with us?</label>
+                        <select name="brunches" onChange="calculatePrice()" id="brunches">
+                            <option value="0">Select one</option>
+                            <option value="0">I won't be there for brunch at all</option>
+                            <option value="15">1 ($15)</option>
+                            <option value="30">2 ($30)</option>
+                            <option value="45">3 ($45)</option>
                         </select><br>
                     </span>
+
                     <span>
-                        <label>Are you going to the water park?</label>
-                            <input type="radio" id="yes" value="yes" name="waterpark"><label for="yes">Yes</label>
-                            <input type="radio" id="no" value="no" name="waterpark"><label for="no">No</label>
+                        <label>Will you contribute $30 to the booze fund?</label>
+                        <select name="booze" onChange="calculatePrice()" id="booze">
+                            <option value="0">Select one</option>
+                            <option value="0">No, you lushes are on your own</option>
+                            <option value="30">Of course!</option>
+                        </select><br>
                     </span>
-                    <p>+Booze allowance: $40</p><br>
-                    <button id="calculate">Calculate cost</button>
+
+                    <!-- Experiment with this later 
+                        <span>
+                        <label>Are you going to the water park?</label>
+                            <input type="radio" id="yes" value="30" name="waterpark"><label for="yes">Yes</label>
+                            <input type="radio" id="no" value="0" name="waterpark"><label for="no">No</label>
+                    </span> -->
+                   
+                    <!-- Experiment with button later
+                    <button id="calculate">Calculate cost</button> -->
+
+
                 </fieldset>
 
-                <label id="finalCost">Your final estimated cost is
-                    <!-- this span is where the toal calculated number will populate -->
-                    <span id="total"></span>
-                </label>
-
-                </form> 
-            </div>
-        </section>
-        <!--/calculator form-->
-
-<!-- discarded calculator content -->
-        <!-- <div>
-            <h1>COST CALCULATOR</h1>
-                <p>How much will this cost? No amount could be too much.  But here&apos;s a tool to help you.</p>
-            
-            <form>
-                How many nights will you stay in the mansion?  Please enter a number 0-3
-                <input type="text" name="firstname"><br>
-
-                How many dinners will you be with us (if all weekend, enter 3)
-                <input type="number" name="dinner"><br>
-
-                How many brunches will you be with us (if all weekend, enter 3)
-                <input type="number" name="brunch"><br>
-
-                Are you going to the water park?
-                <input type="radio" name="waterpark"><br>
-
-                +Booze allowance: $40 <br>
+               <p>Total anticipated cost:<INPUT type="text" id="finalTotal" Size=8>
                 
-                How much will you spend on a gift? $
-                <input type="number" name="gift"><br>
-                
-                <br>How will you travel? <!--multiple choice, each answer affiliated with a dollar value-->
-                <!-- <input type="radio" name="travel"><br> -->
-            <!-- </form>     -->
-                
-                <!-- Insert javascript here. This is where the calculator lives. 
-                What items need to be included?  
-                # of nights in Airbnb (0-3)
-                Can do the following as check boxes with cost affiliated with each checked box
-                # of brunches (0-3)
-                # of dinners (0-3)
-                Joining water park?
-                Enter miscellaneous budget you want to plan for (booze, gift for Catherine)
-                Travel: Flying?  Driving?
-                -->
-        <!-- </div> -->
-    <!-- </section>  -->
-
+            </form> 
+        </div>
+    </section>
+<!--/calculator form-->
 
 <!-- Contains food menu  -->
     <section id="food" class="container">   

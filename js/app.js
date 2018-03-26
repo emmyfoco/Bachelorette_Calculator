@@ -1,23 +1,31 @@
-//jQuery('.box').hide();
-//$('.box').hide();
-//the two lines above are identical
+function calculatePrice(myform){
 
-//box.addEventListener('click', function(){
-//    alert('You clicked me!'); 
-// });
+    //Get selected data  
+    var elt = document.getElementById("nightsMansion");
+    var nights = elt.options[elt.selectedIndex].value;
+      
+    var elt = document.getElementById("dinners");
+    var dinners = elt.options[elt.selectedIndex].value;
+      
+    var elt = document.getElementById("brunches");
+    var brunches = elt.options[elt.selectedIndex].value;
+      
+    var elt = document.getElementById("booze");
+    var booze = elt.options[elt.selectedIndex].value;
 
-//above works same as below
-
-// $('.box').click(function(){
-//     alert('You clicked me!');
-// };)
-
-// $('#flashMessage').hide();
-// $('#flashMessage').slideDown(1000);
-// $('#flashMessage').delay(3000);
-// $('#flashMessage').slideUp();
-
-//above can chain all of the above together like this:
-
-//$('#flashMessage').hide().slideDown(1000).delay(3000).slideUp();
-
+    //convert data to integers
+    nights = parseInt(nights);
+    dinners = parseInt(dinners);
+    brunches = parseInt(brunches);
+    booze = parseInt(booze);
+    
+    //calculate total value  
+    var total = nights+dinners+brunches+booze; 
+    // var totalWithBooze = total+40;
+      
+    //print value to  PicExtPrice 
+    document.getElementById("finalTotal").value=total;
+    
+    
+    // document.getElementById("finalTotal").value=totalWithBooze;
+  }
