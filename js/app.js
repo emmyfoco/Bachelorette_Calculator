@@ -1,4 +1,4 @@
-function calculatePrice(myform){
+function calculatePrice(costCalculator){
 
     //Get selected data  
     var elt = document.getElementById("nightsMansion");
@@ -21,11 +21,7 @@ function calculatePrice(myform){
     
     //calculate total value  
     var total = nights+dinners+brunches+booze; 
-    // var totalWithBooze = total+40;
       
     //print value to  PicExtPrice 
     document.getElementById("finalTotal").value=total;
-    
-    
-    // document.getElementById("finalTotal").value=totalWithBooze;
   }
