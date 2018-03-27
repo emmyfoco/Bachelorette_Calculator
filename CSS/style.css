@@ -2,7 +2,7 @@
 Web fonts
 =====================================*/
 /* @font-face {
-    font-family: ;
+    font-family:  ;
 } */
 
 
@@ -29,6 +29,7 @@ h1 {
     font-size: 30px;
     color: white;
     margin: 0;
+    padding-top: 20px;
 }
 
 h2 {
@@ -72,9 +73,14 @@ fieldset {
 }
 
 form {
-    padding-bottom: 25px;
-    background: white;
+    padding: 15px;
+    background: #f0eded;
     border-radius: 5px;
+    max-width: 500px;
+    /* box-sizing: border-box;
+    display: inline-block;
+    offset-inline-start: 100px; */
+
 }
 
 
@@ -161,6 +167,11 @@ ID Selectors
     float: right;
 }
 
+#calcText {
+    color: white;
+    text-align: center;
+}
+
 /* ==================================
 Media queries
 =====================================*/
@@ -178,6 +189,10 @@ Media queries
         width: 50%;
         height: 50%;
         border-left: 10px solid white;
+    }
+
+    form {
+        text-align: center;
     }
 }
 
