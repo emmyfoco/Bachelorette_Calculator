@@ -45,9 +45,6 @@ img {
     vertical-align: bottom;
 }
 
-/* p {
-    font-size: 1.2em;
-} */
 
 ul {
  list-style: none;
@@ -61,22 +58,16 @@ footer {
     background-color: #2BBC9B;
     padding:  10px;
     margin: -10px;
-}
-
-fieldset {
-    border: none;
-    display: flex;
+    color: white;
 }
 
 form {
-    padding: 15px;
+   
     background: #f0eded;
     border-radius: 5px;
     width: 90%;
-    max-width: 500px;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
+    max-width: 450px;
+    margin-bottom: 50px; 
 }
 
 
@@ -106,6 +97,7 @@ Class Selectors
 
 .section-content {
     width: 90%;
+    margin-left: 20px; 
 }
 
 /* ==================================
@@ -146,7 +138,7 @@ ID Selectors
 }
 
 #intro p {
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 #deets {
@@ -158,6 +150,7 @@ ID Selectors
     background-color: #A18EB3;
     margin: 10px 0;
     background: url('../images/pink cactus.jpg') no-repeat center / cover;
+    align-items: center;
 }
 
 #food {
@@ -165,17 +158,13 @@ ID Selectors
     margin: 10px 0;
 }
 
-#food span {
+/* #food span {
     display: flex;
-    justify-content: space-between
-}
+} */
 
 #check-out {
     background-color:#e9ba3e;
     margin-bottom: 20px;
-}
-
-#check-out p {
 }
 
 #backToTop {
@@ -193,6 +182,7 @@ ID Selectors
     display: flex;
     text-align: center;
 }
+
 
 /* ==================================
 Media queries
