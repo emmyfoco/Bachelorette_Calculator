@@ -1,9 +1,3 @@
-/* ==================================
-Web fonts
-=====================================*/
-/* @font-face {
-    font-family:  ;
-} */
 
 
 /* ==================================
@@ -11,7 +5,7 @@ Type Selectors
 =====================================*/
 
 body {
-    text-align: left;
+    font-family: 'open_sansregular';
 }
 
 a {
@@ -30,6 +24,7 @@ h1 {
     color: white;
     margin: 0;
     padding-top: 20px;
+    font-family: 'open_sansbold';
 }
 
 h2 {
@@ -38,6 +33,7 @@ h2 {
 
 h3 {
     display: inline-block;
+    font-family: 'open_sansbold';
 } 
 
 /* this is not working.  I'm trying to make 
@@ -49,9 +45,9 @@ img {
     vertical-align: bottom;
 }
 
-p {
-    font-size: 14px;
-}
+/* p {
+    font-size: 1.2em;
+} */
 
 ul {
  list-style: none;
@@ -76,11 +72,11 @@ form {
     padding: 15px;
     background: #f0eded;
     border-radius: 5px;
+    width: 90%;
     max-width: 500px;
-    /* box-sizing: border-box;
-    display: inline-block;
-    offset-inline-start: 100px; */
-
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -90,7 +86,8 @@ Class Selectors
 =====================================*/
 .container {
    margin: none;
-   /* display: flex; */
+   display: flex;
+   flex-direction: column;
 }
 
 .main-nav {
@@ -107,6 +104,10 @@ Class Selectors
         background-color: lightgrey;
 }
 
+.section-content {
+    width: 90%;
+}
+
 /* ==================================
 ID Selectors
 =====================================*/
@@ -120,6 +121,9 @@ ID Selectors
 
 #headline {
     text-align: left;
+    font-size: 4.5em;
+    font-family: 'lobster_1.3regular';
+    margin-top: 0;
 }
 
 #top,
@@ -137,8 +141,12 @@ ID Selectors
 }
 
 #intro {
-    width: 125px;
+    width: 150px;
     color: white;
+}
+
+#intro p {
+    font-size: 1em;
 }
 
 #deets {
@@ -157,9 +165,17 @@ ID Selectors
     margin: 10px 0;
 }
 
+#food span {
+    display: flex;
+    justify-content: space-between
+}
+
 #check-out {
     background-color:#e9ba3e;
     margin-bottom: 20px;
+}
+
+#check-out p {
 }
 
 #backToTop {
@@ -169,6 +185,12 @@ ID Selectors
 
 #calcText {
     color: white;
+    text-align: center;
+    background-color: #d48caa;
+    border-radius: 5px;
+    width: 75%;
+    max-width: 700px;
+    display: flex;
     text-align: center;
 }
 
